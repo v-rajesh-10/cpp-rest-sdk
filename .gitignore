@@ -364,3 +364,5 @@ ASALocalRun/
 
 # Local History for Visual Studio
 .localhistory/
+boost/bin.v2/
+boost/project-config.jam
