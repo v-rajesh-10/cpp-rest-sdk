@@ -366,3 +366,7 @@ ASALocalRun/
 .localhistory/
 boost/bin.v2/
 boost/project-config.jam
+tests/x32_VS_debug/
+server/x32_VS_debug/
+client/x32_VS_debug/
+common/x32_VS_debug/
