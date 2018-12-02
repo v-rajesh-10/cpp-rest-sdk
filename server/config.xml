@@ -1,0 +1,25 @@
+<config>
+  <database user="collector" password="dbPassword" dbname="collector" host="localhost" port="5432" />
+  <server
+    address="0.0.0.0"
+    port="9901"
+    defaultNotificationPeriod="3600"
+    smtpHost="smtp.gmail.com"
+    smtpPort="587"
+    smtpUser="techtrialnov2017@gmail.com"
+    smtpPassword="techtrialnov17"
+    notificationSender="techtrialnov2017@gmail.com"
+    notificationSubject="Alert - Machine Statistics Collection Service"
+    notificationBody="Hello,&#10;&#10;Statistics Collection service has detected resource limit warning on your machine.&#10;Your key: %1%&#10;Triggered alerts:&#10;----&#10;%2%----&#10;&#10;Yours,&#10;CollectorService&#10;"
+    notificationLimitLine="%1%: detected value: %2%, limit: %3%" />
+  <client key="user1" mail="techtrialnov2017@gmail.com" notificationPeriod="60">
+    <alert type="cpu" limit="20%" />
+    <alert type="memory" limit="60%" />
+    <alert type="processes" limit="125" />
+  </client>
+  <client key="user2" mail="techtrialnov2017@gmail.com" notificationPeriod="3600">
+    <alert type="cpu" limit="10%" />
+    <alert type="memory" limit="40%" />
+    <alert type="processes" limit="120" />
+  </client>
+</config>

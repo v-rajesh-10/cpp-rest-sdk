@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="ServerConfig.cpp" />
+    <ClCompile Include="Server.cpp" />
+    <ClCompile Include="Connection.cpp" />
+    <ClCompile Include="Database.cpp" />
+    <ClCompile Include="DatabaseMonitoringStorage.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MonitoringStorage.cpp" />
+    <ClCompile Include="CSmtp_v2_2_ssl\base64.cpp">
+      <Filter>CSmtp_v2_2_ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="CSmtp_v2_2_ssl\CSmtp.cpp">
+      <Filter>CSmtp_v2_2_ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="CSmtp_v2_2_ssl\md5.cpp">
+      <Filter>CSmtp_v2_2_ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="CSmtpMailManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ServerConfig.h" />
+    <ClInclude Include="..\common\Request.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\Response.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="Server.h" />
+    <ClInclude Include="Connection.h" />
+    <ClInclude Include="MonitoringStorage.h" />
+    <ClInclude Include="Database.h" />
+    <ClInclude Include="..\common\protocol.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="pgsql\include\libpq-fe.h">
+      <Filter>pgsql</Filter>
+    </ClInclude>
+    <ClInclude Include="pgsql\include\pg_config_ext.h">
+      <Filter>pgsql</Filter>
+    </ClInclude>
+    <ClInclude Include="pgsql\include\postgres_ext.h">
+      <Filter>pgsql</Filter>
+    </ClInclude>
+    <ClInclude Include="CSmtp_v2_2_ssl\base64.h">
+      <Filter>CSmtp_v2_2_ssl</Filter>
+    </ClInclude>
+    <ClInclude Include="CSmtp_v2_2_ssl\CSmtp.h">
+      <Filter>CSmtp_v2_2_ssl</Filter>
+    </ClInclude>
+    <ClInclude Include="CSmtp_v2_2_ssl\md5.h">
+      <Filter>CSmtp_v2_2_ssl</Filter>
+    </ClInclude>
+    <ClInclude Include="MailManager.h" />
+    <ClInclude Include="..\common\popDisableWarnings.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\pushDisableWarnings.h">
+      <Filter>common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="common">
+      <UniqueIdentifier>{4c48e88d-0d1d-4e97-8400-880713a33129}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CSmtp_v2_2_ssl">
+      <UniqueIdentifier>{927b7b0d-42a3-40db-9dc5-110eddddd362}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pgsql">
+      <UniqueIdentifier>{930b4753-0195-4235-b9a9-bd2b7d8a0a31}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="config.xml" />
+  </ItemGroup>
+</Project>
