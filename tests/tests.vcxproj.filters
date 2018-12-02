@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="gtest.cpp" />
+    <ClCompile Include="..\client\ClientConfig.cpp">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientConfigTests.cpp">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\ServerConfig.cpp">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerConfigTests.cpp">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="HttpTests.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="common">
+      <UniqueIdentifier>{266d8573-2922-46b8-bf4f-d54dd2818ce3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client">
+      <UniqueIdentifier>{0d594e2d-a811-4fe6-83b4-6a34260948f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="server">
+      <UniqueIdentifier>{1a12f3b3-4627-46f6-9488-b1a69b2e5c7d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\common\popDisableWarnings.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\pushDisableWarnings.h">
+      <Filter>common</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
