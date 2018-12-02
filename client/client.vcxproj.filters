@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="TestSystemMetrics.cpp" />
+    <ClCompile Include="windows\PlatformSystemMetrics.cpp">
+      <Filter>windows</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientConfig.cpp" />
+    <ClCompile Include="Client.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SystemMetrics.h" />
+    <ClInclude Include="ClientConfig.h" />
+    <ClInclude Include="Client.h" />
+    <ClInclude Include="..\common\Request.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\Response.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\protocol.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\popDisableWarnings.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\pushDisableWarnings.h">
+      <Filter>common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="windows">
+      <UniqueIdentifier>{61f11e23-c22e-4d2e-b712-bb63bddb7ce8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{d7b6cf2e-913b-4861-be9a-cecb7e2d4cef}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="config.xml" />
+  </ItemGroup>
+</Project>

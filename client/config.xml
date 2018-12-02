@@ -1,0 +1,4 @@
+<config>
+  <client key="user1" updateInterval="20" />
+  <server host="localhost" port="9901" />
+</config>
